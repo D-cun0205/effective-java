@@ -1,4 +1,4 @@
-package staticfactorymethod;
+package com.refectoring.effectivejava.eff.staticfactorymethod;
 
 import java.util.Optional;
 import java.util.ServiceLoader;

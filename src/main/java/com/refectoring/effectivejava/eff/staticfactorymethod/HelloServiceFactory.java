@@ -1,4 +1,4 @@
-package staticfactorymethod;
+package com.refectoring.effectivejava.eff.staticfactorymethod;
 
 // 정적 팩토리 메서드의 장점 세 번째 ~ 다섯 번째 장점
 

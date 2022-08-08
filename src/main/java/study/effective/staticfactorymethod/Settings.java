@@ -1,4 +1,4 @@
-package staticfactorymethod;
+package study.effective.staticfactorymethod;
 
 // 정적 팩토리 메서드의 장점 두 번째
 

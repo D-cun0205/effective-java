@@ -1,4 +1,4 @@
-package staticfactorymethod;
+package study.effective.staticfactorymethod;
 
 public class KoreanHelloService implements HelloServiceFactory {
     @Override

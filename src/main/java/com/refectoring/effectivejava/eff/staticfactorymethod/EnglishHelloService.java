@@ -1,4 +1,4 @@
-package staticfactorymethod;
+package com.refectoring.effectivejava.eff.staticfactorymethod;
 
 public class EnglishHelloService implements HelloServiceFactory {
     @Override
