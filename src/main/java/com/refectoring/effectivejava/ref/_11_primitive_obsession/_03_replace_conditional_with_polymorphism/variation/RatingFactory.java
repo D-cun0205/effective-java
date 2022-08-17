@@ -2,9 +2,17 @@ package com.refectoring.effectivejava.ref._11_primitive_obsession._03_replace_co
 
 import java.util.List;
 
-public class RatingFactory extends ChinaExperienceVoyageRating {
+public class RatingFactory {
 
-    public RatingFactory(Voyage voyage, List<VoyageHistory> history) {
-        super(voyage, history);
+    public static VoyageRating createVoyageRating(Voyage voyage, List<VoyageHistory> history) {
+        if (voyage.zone().equals("china") && hasChinaHistory(history)) {
+            return new ChinaExperienceVoyageRating(voyage, history);
+        } else {
+            return new VoyageRating(voyage, history);
+        }
+    }
+
+    private static boolean hasChinaHistory(List<VoyageHistory> history) {
+        return history.stream().anyMatch(v -> v.zone().equals("china"));
     }
 }

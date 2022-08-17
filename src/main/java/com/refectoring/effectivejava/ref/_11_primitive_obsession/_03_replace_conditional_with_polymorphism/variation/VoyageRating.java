@@ -35,12 +35,12 @@ public class VoyageRating {
         return Math.max(result, 0);
     }
 
-    private int voyageProfitFactor() {
+    protected int voyageProfitFactor() {
         int result = 2;
         if (this.voyage.zone().equals("china")) result += 1;
         if (this.voyage.zone().equals("east-indies")) result +=1 ;
-        result += voyageLengthFactor();
         result += historyLengthFactor();
+        result += voyageLengthFactor();
         return result;
     }
 
@@ -52,7 +52,4 @@ public class VoyageRating {
         return (this.history.size() > 8) ? 1 : 0;
     }
 
-    private boolean hasChinaHistory() {
-        return this.history.stream().anyMatch(v -> v.zone().equals("china"));
-    }
 }

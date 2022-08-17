@@ -1,0 +1,4 @@
+package com.refectoring.effectivejava.ref._16_temporary_field._01_introduce_special_case;
+
+public class BasicBillingPlan extends BillingPlan {
+}
